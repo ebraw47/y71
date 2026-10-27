@@ -1,0 +1,14 @@
+{
+  "name": "Y71 Game Pakistan",
+  "short_name": "Y71",
+  "description": "Y71 Game — Play & Earn with JazzCash and EasyPaisa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#140808",
+  "theme_color": "#fbdf03",
+  "icons": [
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/y71-logo-512.webp", "sizes": "512x512", "type": "image/webp" }
+  ]
+}

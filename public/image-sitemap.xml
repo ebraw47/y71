@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://y71.net.pk/</loc>
+    <image:image><image:loc>https://y71.net.pk/y71-logo.webp</image:loc><image:title>Y71 Logo</image:title></image:image>
+    <image:image><image:loc>https://y71.net.pk/y71-hero-logo.webp</image:loc><image:title>Y71 Hero Logo</image:title></image:image>
+    <image:image><image:loc>https://y71.net.pk/y71-deposit.webp</image:loc><image:title>Y71 Deposit</image:title></image:image>
+    <image:image><image:loc>https://y71.net.pk/y71-withdraw.webp</image:loc><image:title>Y71 Withdraw</image:title></image:image>
+    <image:image><image:loc>https://y71.net.pk/y71-login.webp</image:loc><image:title>Y71 Login</image:title></image:image>
+    <image:image><image:loc>https://y71.net.pk/y71-signup.webp</image:loc><image:title>Y71 Register</image:title></image:image>
+  </url>
+</urlset>
