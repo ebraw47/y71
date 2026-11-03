@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'Y71 Login Problems & Forgot Password Fix',
   description: 'Fix Y71 login failed, OTP not received, wrong password and account lock issues for Pakistani numbers — safe reset steps only.',
   keywords: [
@@ -23,6 +34,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-login.webp`, width: 1200, height: 630, alt: 'Y71 Login Problems & Forgot Password Fix' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Y71 Login Problems & Forgot Password Fix',
+    description: 'Fix Y71 login failed, OTP not received, wrong password and account lock issues for Pakistani numbers — safe reset steps only.',
   },
 };
 
@@ -74,6 +90,7 @@ export default function Page() {
         <h2 className="text-2xl font-bold text-white mt-8">Still locked out?</h2>
         <p>Open <Link href="/blog/y71-customer-care-support" className="text-accent hover:underline">Y71 customer care</Link> from a working device or the web lobby if available. Share your number and registration date — never share OTP or PIN.</p>
       </div>
+      <RelatedGuides slug="y71-login-problems-forgot-password" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

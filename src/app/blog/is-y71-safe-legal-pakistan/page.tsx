@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'Is Y71 Safe and Legal in Pakistan?',
   description: 'Is Y71 real or fake? Official download tips, scam warnings, legal context, and responsible play advice for Pakistan.',
   keywords: ['is Y71 safe', 'Y71 real or fake', 'Y71 legal Pakistan', 'Y71 scam'],
@@ -17,6 +28,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-support.webp`, width: 1200, height: 630, alt: 'Is Y71 Safe and Legal in Pakistan?' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Is Y71 Safe and Legal in Pakistan?',
+    description: 'Is Y71 real or fake? Official download tips, scam warnings, legal context, and responsible play advice for Pakistan.',
   },
 };
 
@@ -59,6 +75,7 @@ export default function Page() {
         <p>Set a budget, take breaks, and play only if you are 18+. Need help? <Link href="/contact-us" className="text-accent hover:underline">Contact us</Link>.</p>
     
       </div>
+      <RelatedGuides slug="is-y71-safe-legal-pakistan" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

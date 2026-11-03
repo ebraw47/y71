@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'Y71 Deposit Guide: JazzCash & EasyPaisa',
   description: 'Add Y71 balance with JazzCash or EasyPaisa, fix delayed credits, and avoid common deposit mistakes in Pakistan.',
   keywords: ['Y71 deposit', 'Y71 JazzCash', 'Y71 EasyPaisa', 'Y71 recharge'],
@@ -17,6 +28,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-deposit.webp`, width: 1200, height: 630, alt: 'Y71 Deposit Guide: JazzCash & EasyPaisa' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Y71 Deposit Guide: JazzCash & EasyPaisa',
+    description: 'Add Y71 balance with JazzCash or EasyPaisa, fix delayed credits, and avoid common deposit mistakes in Pakistan.',
   },
 };
 
@@ -63,6 +79,7 @@ export default function Page() {
         <p>Full page: <Link href="/deposit-money-in-y71" className="text-accent hover:underline">Deposit money in Y71</Link>. Next: <Link href="/blog/y71-withdraw-money-guide" className="text-accent hover:underline">withdraw guide</Link>.</p>
     
       </div>
+      <RelatedGuides slug="y71-deposit-jazzcash-easypaisa-guide" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

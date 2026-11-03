@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'Y71 Bonus & Promotions Guide 2026',
   description: 'Y71 first deposit bonus up to 30%, daily check-in, lucky wheel, VIP rebates and how to claim offers safely in Pakistan.',
   keywords: [
@@ -23,6 +34,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-home.webp`, width: 1200, height: 630, alt: 'Y71 Bonus & Promotions Guide 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Y71 Bonus & Promotions Guide 2026',
+    description: 'Y71 first deposit bonus up to 30%, daily check-in, lucky wheel, VIP rebates and how to claim offers safely in Pakistan.',
   },
 };
 
@@ -73,6 +89,7 @@ export default function Page() {
         </ul>
         <p>Next: <Link href="/blog/y71-deposit-jazzcash-easypaisa-guide" className="text-accent hover:underline">deposit guide</Link> · <Link href="/blog/y71-referral-invite-code-guide" className="text-accent hover:underline">referral guide</Link>.</p>
       </div>
+      <RelatedGuides slug="y71-bonus-promotions-guide" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

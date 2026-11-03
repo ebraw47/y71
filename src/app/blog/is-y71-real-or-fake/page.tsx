@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'Is Y71 Real or Fake? Scam Check for Pakistan',
   description: 'Is Y71 real or a scam? How to spot fake APKs, fake agents, payment traps and what genuine players should verify before depositing in Pakistan.',
   keywords: [
@@ -23,6 +34,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-support.webp`, width: 1200, height: 630, alt: 'Is Y71 Real or Fake? Scam Check for Pakistan' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Is Y71 Real or Fake? Scam Check for Pakistan',
+    description: 'Is Y71 real or a scam? How to spot fake APKs, fake agents, payment traps and what genuine players should verify before depositing in Pakistan.',
   },
 };
 
@@ -69,6 +85,7 @@ export default function Page() {
         <h2 className="text-2xl font-bold text-white mt-8">Bottom line</h2>
         <p>Y71 is a real-money play-and-earn lobby marketed to Pakistan. Like any such app, outcomes are uncertain and funds can be lost. Stay with official downloads, small tests, and responsible limits. 18+ only.</p>
       </div>
+      <RelatedGuides slug="is-y71-real-or-fake" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

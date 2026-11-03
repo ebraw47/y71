@@ -66,15 +66,9 @@ export default function DownloadPage() {
       "priceCurrency": "PKR",
       "availability": "https://schema.org/InStock"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "ratingCount": "600000",
-      "bestRating": "5"
-    },
     "downloadUrl": "https://y71.net.pk/download-y71",
-    "softwareVersion": "Latest 2026",
-    "fileSize": "~10MB",
+    "softwareVersion": "v1.1.1",
+    "fileSize": "16 MB",
     "datePublished": "2026-01-03",
     "description": "Download Y71 APK free for Android. Play earning games & more. Earn real cash with JazzCash & EasyPaisa.",
     "screenshot": [

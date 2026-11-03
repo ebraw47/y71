@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'How to Use Y71 App in Pakistan: Beginner Guide',
   description: 'Beginner guide to start earning with Y71 in Pakistan: download, register, deposit, play, withdraw, and stay in control.',
   keywords: ['how to use Y71', 'Y71 beginner guide', 'start earning Y71 Pakistan', 'Y71 guide'],
@@ -17,6 +28,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-home.webp`, width: 1200, height: 630, alt: 'How to Use Y71 App in Pakistan: Beginner Guide' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Use Y71 App in Pakistan: Beginner Guide',
+    description: 'Beginner guide to start earning with Y71 in Pakistan: download, register, deposit, play, withdraw, and stay in control.',
   },
 };
 
@@ -63,6 +79,7 @@ export default function Page() {
         <p>Also read our <Link href="/blog/y71-app-review-2026" className="text-accent hover:underline">2026 Y71 review</Link> and <Link href="/blog/is-y71-safe-legal-pakistan" className="text-accent hover:underline">safety guide</Link>.</p>
     
       </div>
+      <RelatedGuides slug="how-to-use-y71-app-pakistan-guide" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

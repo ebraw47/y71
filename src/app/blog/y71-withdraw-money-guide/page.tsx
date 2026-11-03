@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'Y71 Withdraw Money Guide',
   description: 'Cash out Y71 winnings to JazzCash or EasyPaisa — no extra approvals needed. Fix failed withdrawal requests fast.',
   keywords: ['Y71 withdraw', 'Y71 withdrawal', 'Y71 JazzCash cash out', 'Y71 EasyPaisa'],
@@ -17,6 +28,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-withdraw.webp`, width: 1200, height: 630, alt: 'Y71 Withdraw Money Guide' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Y71 Withdraw Money Guide',
+    description: 'Cash out Y71 winnings to JazzCash or EasyPaisa — no extra approvals needed. Fix failed withdrawal requests fast.',
   },
 };
 
@@ -66,6 +82,7 @@ export default function Page() {
         <p>Full page: <Link href="/withdraw-money-from-y71" className="text-accent hover:underline">Withdraw money from Y71</Link>. Also read: <Link href="/blog/is-y71-safe-legal-pakistan" className="text-accent hover:underline">is Y71 safe?</Link>.</p>
     
       </div>
+      <RelatedGuides slug="y71-withdraw-money-guide" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

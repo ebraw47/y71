@@ -3,10 +3,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { APP_VERSION, MIN_AGE, SITE_URL } from '@/lib/constants';
 import { cons, pros } from '@/lib/homeContent';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'Y71 App Review 2026',
   description:
     'Full Y71 Game review for Pakistan 2026: lobby games, JazzCash & EasyPaisa, first deposit bonus, withdraw fees, pros, cons and responsible play notes.',
@@ -20,6 +31,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-home.webp`, width: 1200, height: 630, alt: 'Y71 App Review 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Y71 App Review 2026',
+    description: 'Full Y71 Game review for Pakistan 2026: lobby games, JazzCash & EasyPaisa, first deposit bonus, withdraw fees, pros, cons and responsible play notes.',
   },
 };
 
@@ -121,6 +137,7 @@ export default function Page() {
           .
         </p>
       </div>
+      <RelatedGuides slug="y71-app-review-2026" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

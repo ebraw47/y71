@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'How to Download & Install Y71 APK in Pakistan',
   description: 'Step-by-step Android install for Y71: official APK, unknown sources, and troubleshooting for Pakistani phones.',
   keywords: ['Y71 download', 'Y71 APK', 'install Y71 Pakistan', 'Y71 Android'],
@@ -17,6 +28,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-home.webp`, width: 1200, height: 630, alt: 'How to Download & Install Y71 APK in Pakistan' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Download & Install Y71 APK in Pakistan',
+    description: 'Step-by-step Android install for Y71: official APK, unknown sources, and troubleshooting for Pakistani phones.',
   },
 };
 
@@ -68,6 +84,7 @@ export default function Page() {
         <p>Next: <Link href="/blog/create-y71-account-and-login" className="text-accent hover:underline">create account &amp; login</Link>.</p>
     
       </div>
+      <RelatedGuides slug="how-to-download-install-y71-apk-pakistan" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

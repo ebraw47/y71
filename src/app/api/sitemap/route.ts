@@ -1,23 +1,9 @@
 import { NextResponse } from 'next/server';
+import { BLOG_SLUGS } from '@/lib/blogPosts';
 
 const baseUrl = 'https://y71.net.pk';
 
-const blogSlugs = [
-  'y71-app-review-2026',
-  'how-to-download-install-y71-apk-pakistan',
-  'create-y71-account-and-login',
-  'y71-deposit-jazzcash-easypaisa-guide',
-  'y71-withdraw-money-guide',
-  'y71-bonus-promotions-guide',
-  'y71-referral-invite-code-guide',
-  'how-to-earn-money-on-y71',
-  'y71-minimum-deposit-withdrawal-limits',
-  'y71-login-problems-forgot-password',
-  'y71-customer-care-support',
-  'is-y71-real-or-fake',
-  'is-y71-safe-legal-pakistan',
-  'how-to-use-y71-app-pakistan-guide',
-];
+const blogSlugs = BLOG_SLUGS;
 
 export async function GET() {
   type PageType = {

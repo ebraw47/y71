@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'Y71 Minimum Deposit & Withdrawal Limits',
   description: 'Typical Y71 min deposit (~Rs 100), min withdraw (~Rs 103), max per order, fees and daily caps for JazzCash & EasyPaisa in Pakistan.',
   keywords: [
@@ -23,6 +34,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-deposit.webp`, width: 1200, height: 630, alt: 'Y71 Minimum Deposit & Withdrawal Limits' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Y71 Minimum Deposit & Withdrawal Limits',
+    description: 'Typical Y71 min deposit (~Rs 100), min withdraw (~Rs 103), max per order, fees and daily caps for JazzCash & EasyPaisa in Pakistan.',
   },
 };
 
@@ -72,6 +88,7 @@ export default function Page() {
         </ul>
         <p>Full flows: <Link href="/blog/y71-deposit-jazzcash-easypaisa-guide" className="text-accent hover:underline">deposit guide</Link> · <Link href="/blog/y71-withdraw-money-guide" className="text-accent hover:underline">withdraw guide</Link>.</p>
       </div>
+      <RelatedGuides slug="y71-minimum-deposit-withdrawal-limits" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

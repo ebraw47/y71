@@ -3,9 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from '@/components/DownloadButton';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedGuides from '@/components/RelatedGuides';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   title: 'How to Create a Y71 Account and Login',
   description: 'Register on Y71 with your Pakistani number, set a password, verify OTP, and log in safely.',
   keywords: ['Y71 login', 'Y71 register', 'Y71 account', 'Y71 signup'],
@@ -17,6 +28,11 @@ export const metadata: Metadata = {
     siteName: 'Y71',
     type: 'article',
     images: [{ url: `${SITE_URL}/y71-signup.webp`, width: 1200, height: 630, alt: 'How to Create a Y71 Account and Login' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Create a Y71 Account and Login',
+    description: 'Register on Y71 with your Pakistani number, set a password, verify OTP, and log in safely.',
   },
 };
 
@@ -68,6 +84,7 @@ export default function Page() {
         <p>Next: <Link href="/blog/y71-deposit-jazzcash-easypaisa-guide" className="text-accent hover:underline">deposit with JazzCash / EasyPaisa</Link>.</p>
     
       </div>
+      <RelatedGuides slug="create-y71-account-and-login" />
       <div className="mt-12 text-center">
         <DownloadButton size="lg" label="DOWNLOAD Y71 APK" />
         <p className="text-sm text-gray-500 mt-4">

@@ -34,6 +34,7 @@ import {
   withdrawSteps,
 } from '@/lib/homeContent';
 import { Y71_SHOTS } from '@/lib/screenshots';
+import { BLOG_POSTS, HOMEPAGE_GUIDE_LINKS } from '@/lib/blogPosts';
 
 export const metadata: Metadata = {
   title: 'Y71 Game 2026 – Play & Earn Real Money Online in Pakistan',
@@ -50,9 +51,21 @@ export const metadata: Metadata = {
     'Y71 JazzCash',
     'Y71 EasyPaisa',
     'Y71 referral',
+    'Y71 bonus',
+    'Y71 earn money',
     'Y71 Game 2026',
     'y71.net.pk',
   ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   alternates: { canonical: SITE_URL },
   openGraph: {
     title: 'Y71 Game 2026 – Play & Earn in Pakistan',
@@ -679,6 +692,44 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Popular guides — internal links for SEO cluster */}
+      <section className="py-14 px-4 bg-black/20">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-white">
+            Popular Y71 Guides
+          </h2>
+          <p className="text-center text-gray-400 mb-8 max-w-2xl mx-auto">
+            Step-by-step help for download, bonuses, JazzCash deposits, withdrawals, referrals and
+            account issues in Pakistan.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {HOMEPAGE_GUIDE_LINKS.map((slug) => {
+              const post = BLOG_POSTS.find((p) => p.slug === slug);
+              if (!post) return null;
+              return (
+                <Link
+                  key={slug}
+                  href={`/blog/${slug}`}
+                  className="rounded-xl border border-accent/20 bg-primary/60 px-4 py-4 hover:border-accent transition-colors"
+                >
+                  <span className="font-semibold text-accent text-sm leading-snug block">
+                    {post.title}
+                  </span>
+                  <span className="text-xs text-gray-400 mt-2 block line-clamp-2">
+                    {post.description}
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+          <p className="text-center mt-6">
+            <Link href="/blog" className="text-accent hover:underline font-semibold">
+              View all Y71 blog guides →
+            </Link>
+          </p>
         </div>
       </section>
 
