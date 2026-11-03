@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, type ReactNode } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -13,7 +14,7 @@ type NavItem = {
 };
 
 const Chevron = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-gray-600" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-gray-500" aria-hidden="true">
     <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
   </svg>
 );
@@ -37,9 +38,6 @@ const MAIN_LINKS: NavItem[] = [
       </svg>
     ),
   },
-];
-
-const GUIDE_LINKS: NavItem[] = [
   {
     href: '/deposit-money-in-y71',
     label: 'Deposit Guide',
@@ -67,24 +65,21 @@ const GUIDE_LINKS: NavItem[] = [
       </svg>
     ),
   },
-];
-
-const INFO_LINKS: NavItem[] = [
-  {
-    href: '/about-us',
-    label: 'About Us',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-      </svg>
-    ),
-  },
   {
     href: '/blog',
     label: 'Blog',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+      </svg>
+    ),
+  },
+  {
+    href: '/about-us',
+    label: 'About Us',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
       </svg>
     ),
   },
@@ -99,52 +94,87 @@ const INFO_LINKS: NavItem[] = [
   },
 ];
 
-function NavSection({
-  title,
-  items,
+function MenuOverlay({
   pathname,
-  onNavigate,
+  onClose,
 }: {
-  title: string;
-  items: NavItem[];
   pathname: string;
-  onNavigate: () => void;
+  onClose: () => void;
 }) {
   return (
-    <div className="mb-2">
-      <p className="text-[11px] font-semibold tracking-widest text-gray-500 uppercase px-1 pt-5 pb-2">
-        {title}
-      </p>
-      <ul className="space-y-0.5">
-        {items.map((item) => {
-          const isActive =
-            item.href === '/'
-              ? pathname === '/'
-              : pathname === item.href || pathname.startsWith(`${item.href}/`);
+    <div
+      className="fixed inset-0 z-[100] flex flex-col bg-[#140808]"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Site menu"
+      style={{
+        backgroundImage:
+          'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(251,223,3,0.12), transparent 50%), linear-gradient(rgba(251,223,3,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(251,223,3,0.04) 1px, transparent 1px)',
+        backgroundSize: 'auto, 48px 48px, 48px 48px',
+      }}
+    >
+      <div className="flex justify-between items-center px-5 py-4 border-b border-gray-800/80 shrink-0">
+        <Link href="/" className="flex items-center gap-2" onClick={onClose}>
+          <span className="font-logo italic font-bold text-xl tracking-tight">
+            <span className="text-accent">Y</span>
+            <span className="text-white">71</span>
+          </span>
+        </Link>
+        <button
+          onClick={onClose}
+          className="flex items-center justify-center w-10 h-10 rounded-full bg-[#134e22] text-white hover:bg-[#1a6b2e] transition-colors"
+          aria-label="Close menu"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
 
-          return (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                onClick={onNavigate}
-                className={`flex items-center gap-4 px-1 py-3.5 transition-colors group ${
-                  isActive ? 'text-accent' : 'text-white hover:text-accent'
-                }`}
-              >
-                <span
-                  className={`transition-colors flex-shrink-0 ${
-                    isActive ? 'text-accent' : 'text-gray-400 group-hover:text-accent'
-                  }`}
-                >
-                  {item.icon}
-                </span>
-                <span className="flex-1 text-[15px] font-medium">{item.label}</span>
-                <Chevron />
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      <div className="flex-1 overflow-y-auto min-h-0">
+        <nav className="px-5 py-2 pb-6">
+          <p className="text-[11px] font-semibold tracking-widest text-gray-500 uppercase px-1 pt-5 pb-2">
+            MENU
+          </p>
+          <ul className="space-y-0.5">
+            {MAIN_LINKS.map((item) => {
+              const isActive =
+                item.href === '/'
+                  ? pathname === '/'
+                  : pathname === item.href || pathname.startsWith(`${item.href}/`);
+
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    onClick={onClose}
+                    className={`flex items-center gap-4 px-1 py-3.5 transition-colors group ${
+                      isActive ? 'text-accent' : 'text-white hover:text-accent'
+                    }`}
+                  >
+                    <span
+                      className={`transition-colors flex-shrink-0 ${
+                        isActive ? 'text-accent' : 'text-gray-400 group-hover:text-accent'
+                      }`}
+                    >
+                      {item.icon}
+                    </span>
+                    <span className="flex-1 text-[15px] font-medium">{item.label}</span>
+                    <Chevron />
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+
+      <div className="px-5 pt-4 pb-8 border-t border-gray-800/80 flex flex-col items-center shrink-0">
+        <DownloadButton size="sm" label="DOWNLOAD Y71 APK" />
+        <p className="text-center text-gray-500 text-xs mt-3">
+          ~20MB · Android 5.0+ · 2026 Update
+        </p>
+      </div>
     </div>
   );
 }
@@ -183,61 +213,30 @@ export default function MobileNavigation() {
     );
   }
 
-  const close = () => setIsOpen(false);
-
   return (
     <div className="md:hidden">
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen((open) => !open)}
         className="flex items-center text-accent p-1"
         aria-label={isOpen ? 'Close menu' : 'Open menu'}
         aria-expanded={isOpen}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        {isOpen ? (
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        ) : (
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        )}
       </button>
 
-      {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-[#140808]" style={{ backgroundImage: "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(251,223,3,0.12), transparent 50%), linear-gradient(rgba(251,223,3,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(251,223,3,0.04) 1px, transparent 1px)", backgroundSize: "auto, 48px 48px, 48px 48px" }}>
-          {/* Header */}
-          <div className="flex justify-between items-center px-5 py-4 border-b border-gray-800/80">
-            <Link href="/" className="flex items-center gap-2" onClick={close}>
-              <span className="font-logo italic font-bold text-xl tracking-tight">
-                <span className="dx-wordmark-orange">K</span>
-                <span className="dx-wordmark-white">666</span>
-              </span>
-            </Link>
-            <button
-              onClick={close}
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-[#134e22] text-white hover:bg-[#1a6b2e] transition-colors"
-              aria-label="Close menu"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Scrollable nav */}
-          <div className="relative flex-1 overflow-y-auto">
-            <div className="absolute right-0 top-0 bottom-0 w-1 bg-cyan" aria-hidden="true" />
-            <nav className="px-5 py-2 pb-6">
-              <NavSection title="MAIN" items={MAIN_LINKS} pathname={pathname} onNavigate={close} />
-              <NavSection title="GUIDES" items={GUIDE_LINKS} pathname={pathname} onNavigate={close} />
-              <NavSection title="INFO" items={INFO_LINKS} pathname={pathname} onNavigate={close} />
-            </nav>
-          </div>
-
-          {/* Download CTA */}
-          <div className="px-5 pt-4 pb-8 border-t border-gray-800/80 flex flex-col items-center">
-            <DownloadButton size="sm" />
-            <p className="text-center text-gray-500 text-xs mt-3">
-              ~20MB · Android 5.0+ · 2026 Update
-            </p>
-          </div>
-        </div>
-      )}
+      {isOpen &&
+        createPortal(
+          <MenuOverlay pathname={pathname} onClose={() => setIsOpen(false)} />,
+          document.body
+        )}
     </div>
   );
 }

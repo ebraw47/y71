@@ -5,12 +5,14 @@ import { SITE_URL } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Y71 Blog - Guides, Tips, Reviews & Tutorials 2026',
   description:
-    'Y71 blog for Pakistan: app review, APK install, JazzCash & EasyPaisa deposits, withdrawals, safety, and beginner guides based on real search demand.',
+    'Y71 blog for Pakistan: app review, APK, bonuses, referral, earn money, JazzCash deposits, withdrawals, login fixes, support and safety guides.',
   keywords: [
     'Y71 blog',
     'Y71 guide',
     'Y71 review',
     'Y71 APK',
+    'Y71 bonus',
+    'Y71 referral',
     'Y71 deposit',
     'Y71 withdraw',
     'Y71 Pakistan 2026',
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
   },
 };
 
-/** SERP-matched Y71 topics only (download, review, login, deposit, withdraw, safety, beginner) */
+/** SERP-matched Y71 topics (core funnel + high-volume bonus/referral/earn/support queries) */
 const posts = [
   {
     slug: 'y71-app-review-2026',
@@ -85,9 +87,58 @@ const posts = [
     featured: false,
   },
   {
+    slug: 'y71-bonus-promotions-guide',
+    title: 'Y71 Bonus & Promotions Guide 2026',
+    description: 'First deposit up to 30%, daily check-in, lucky wheel, VIP rebates and claim tips.',
+    readTime: '9 min read',
+    featured: false,
+  },
+  {
+    slug: 'y71-referral-invite-code-guide',
+    title: 'Y71 Referral & Invite Code Guide',
+    description: 'Use an invite code, share Earn links/QR, and understand agent reward rules.',
+    readTime: '8 min read',
+    featured: false,
+  },
+  {
+    slug: 'how-to-earn-money-on-y71',
+    title: 'How to Earn Money on Y71 App (Pakistan)',
+    description: 'Realistic earn paths: games, check-ins, referrals, deposits and withdrawals.',
+    readTime: '10 min read',
+    featured: false,
+  },
+  {
+    slug: 'y71-minimum-deposit-withdrawal-limits',
+    title: 'Y71 Minimum Deposit & Withdrawal Limits',
+    description: 'Typical PKR min/max, fees and daily caps for JazzCash & EasyPaisa.',
+    readTime: '7 min read',
+    featured: false,
+  },
+  {
+    slug: 'y71-login-problems-forgot-password',
+    title: 'Y71 Login Problems & Forgot Password Fix',
+    description: 'Fix login failed, OTP issues, wrong password and account lockouts safely.',
+    readTime: '7 min read',
+    featured: false,
+  },
+  {
+    slug: 'y71-customer-care-support',
+    title: 'Y71 Customer Care & Support Guide',
+    description: 'In-app live chat, Telegram/WhatsApp shortcuts, and what proof to send.',
+    readTime: '6 min read',
+    featured: false,
+  },
+  {
+    slug: 'is-y71-real-or-fake',
+    title: 'Is Y71 Real or Fake? Scam Check for Pakistan',
+    description: 'Spot fake APKs, fake agents and payment traps before you deposit.',
+    readTime: '8 min read',
+    featured: false,
+  },
+  {
     slug: 'is-y71-safe-legal-pakistan',
     title: 'Is Y71 Safe and Legal in Pakistan?',
-    description: 'Real or fake? Official download tips, scam warnings, and responsible play.',
+    description: 'Official download tips, scam warnings, and responsible play.',
     readTime: '12 min read',
     featured: false,
   },
