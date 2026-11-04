@@ -68,7 +68,7 @@ export default function Page() {
         <p><strong>Y71 referral</strong> and <strong>Y71 invite code</strong> queries rank well because players want clear steps to share links and claim invite rewards. Rewards depend on live Earn / Agent rules.</p>
         <h2 className="text-2xl font-bold text-white mt-8">How to use an invite code when registering</h2>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Download Y71 only from the trusted button on <Link href="/" className="text-accent hover:underline">y71.net.pk</Link>.</li>
+          <li>Download Y71 only from the trusted button on <Link href="/" className="text-accent hover:underline">y71-apk.com.pk</Link>.</li>
           <li>Open Register and enter your +92 mobile number and password.</li>
           <li>If the form shows Invite / Referral code, enter a code you trust (optional on some builds).</li>
           <li>Accept the privacy agreement and complete OTP if asked.</li>

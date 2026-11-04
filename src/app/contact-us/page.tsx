@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us - Y71',
     description: 'Get in touch with Y71 support team for any queries or assistance.',
-    url: 'https://y71.net.pk/contact-us',
+    url: 'https://y71-apk.com.pk/contact-us',
     siteName: 'Y71',
     type: 'website',
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Get in touch with Y71 support team for any queries or assistance.',
   },
   alternates: {
-    canonical: 'https://y71.net.pk/contact-us',
+    canonical: 'https://y71-apk.com.pk/contact-us',
   },
   robots: {
     index: true,
@@ -55,13 +55,13 @@ export default function Contact() {
                 <p className="text-center mb-4 text-gray-400">Send us your questions or concerns via email</p>
                 <div className="text-center">
                   <a 
-                    href="mailto:support@y71.net.pk" 
+                    href="mailto:support@y71-apk.com.pk" 
                     className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-primary font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                   >
                     <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    support@y71.net.pk
+                    support@y71-apk.com.pk
                   </a>
                 </div>
               </div>
@@ -122,10 +122,10 @@ export default function Contact() {
             "mainEntity": {
               "@type": "Organization",
               "name": "Y71",
-              "url": "https://y71.net.pk",
+              "url": "https://y71-apk.com.pk",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "email": "support@y71.net.pk",
+                "email": "support@y71-apk.com.pk",
                 "contactType": "Customer Support",
                 "availableLanguage": ["English", "Urdu"]
               }

@@ -35,7 +35,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://y71.net.pk'),
+  metadataBase: new URL('https://y71-apk.com.pk'),
   title: {
     default: "Y71 Game Pakistan 2026 — Play & Earn with JazzCash & EasyPaisa",
     template: "%s | Y71"
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     "Y71 earning game",
     "Y71 JazzCash",
     "Y71 2026",
-    "y71.net.pk"
+    "y71-apk.com.pk"
   ],
   authors: [{ name: "Y71 Team" }],
   creator: "Y71",
@@ -83,24 +83,24 @@ export const metadata: Metadata = {
     google: "8a7c21f6e90a89ef",
   },
   alternates: {
-    canonical: "https://y71.net.pk",
+    canonical: "https://y71-apk.com.pk",
   },
   openGraph: {
     title: "Y71 Pakistan Free Download Official APK 2026",
     description: "Y71 2026 - Download Y71 APK. Play & earn real cash with JazzCash & EasyPaisa withdrawals.",
-    url: "https://y71.net.pk",
+    url: "https://y71-apk.com.pk",
     siteName: "Y71",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://y71.net.pk/feature/og-image.webp",
+        url: "https://y71-apk.com.pk/feature/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Y71 - Real-Money Gaming App",
       },
       {
-        url: "https://y71.net.pk/feature/og-image-square.webp",
+        url: "https://y71-apk.com.pk/feature/og-image-square.webp",
         width: 800,
         height: 800,
         alt: "Y71 - Real-Money Gaming App",
@@ -114,7 +114,7 @@ export const metadata: Metadata = {
     creator: "@y71app",
     images: [
       {
-        url: "https://y71.net.pk/feature/twitter-card.webp",
+        url: "https://y71-apk.com.pk/feature/twitter-card.webp",
         width: 1200,
         height: 600,
         alt: "Y71 - Real-Money Gaming App",
@@ -202,12 +202,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://y71.net.pk/#organization",
+              "@id": "https://y71-apk.com.pk/#organization",
               "name": "Y71",
-              "url": "https://y71.net.pk",
+              "url": "https://y71-apk.com.pk",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://y71.net.pk/y71-logo.webp",
+                "url": "https://y71-apk.com.pk/y71-logo.webp",
                 "width": 512,
                 "height": 512
               },
@@ -216,7 +216,7 @@ export default function RootLayout({
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Customer Support",
-                "email": "support@y71.net.pk",
+                "email": "support@y71-apk.com.pk",
                 "areaServed": "PK",
                 "availableLanguage": ["English", "Urdu"]
               }

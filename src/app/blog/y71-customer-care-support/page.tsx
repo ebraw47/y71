@@ -70,7 +70,7 @@ export default function Page() {
         <ul className="list-disc pl-6 space-y-2">
           <li><strong>In-app Live Chat / Customer Service</strong> — best first option for deposits, KYC and bonuses.</li>
           <li><strong>Telegram / WhatsApp / Facebook</strong> — only use shortcuts that open from inside Y71.</li>
-          <li>Site contact: <Link href="/contact-us" className="text-accent hover:underline">contact page</Link> on y71.net.pk for general guide questions.</li>
+          <li>Site contact: <Link href="/contact-us" className="text-accent hover:underline">contact page</Link> on y71-apk.com.pk for general guide questions.</li>
         </ul>
         <h2 className="text-2xl font-bold text-white mt-8">What to prepare before chatting</h2>
         <ul className="list-disc pl-6 space-y-2">

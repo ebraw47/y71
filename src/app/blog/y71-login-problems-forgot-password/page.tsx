@@ -68,7 +68,7 @@ export default function Page() {
         <p><strong>Y71 login problem</strong> and <strong>Y71 forgot password</strong> are high-intent searches after install. Most fixes are simple: correct +92 format, stable data, OTP reset, then official support — never a third-party “agent.”</p>
         <h2 className="text-2xl font-bold text-white mt-8">Quick checklist</h2>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Confirm you installed the APK from <Link href="/" className="text-accent hover:underline">y71.net.pk</Link>, not a mod file.</li>
+          <li>Confirm you installed the APK from <Link href="/" className="text-accent hover:underline">y71-apk.com.pk</Link>, not a mod file.</li>
           <li>Enter the same +92 mobile number used at registration.</li>
           <li>Check Caps Lock / saved wrong password in your keyboard.</li>
           <li>Switch between Wi-Fi and mobile data, then retry.</li>

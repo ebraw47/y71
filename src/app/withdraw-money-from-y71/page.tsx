@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Withdraw Money from Y71? | Fast & Secure Withdrawal Guide',
     description: 'Step-by-step guide to withdraw money from Y71 using JazzCash, EasyPaisa, and Bank Transfer. Quick and secure withdrawals.',
-    url: 'https://y71.net.pk/withdraw-money-from-y71',
+    url: 'https://y71-apk.com.pk/withdraw-money-from-y71',
     siteName: 'Y71',
     type: 'article',
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'Learn how to withdraw money from Y71 using our complete withdrawal guide.',
   },
   alternates: {
-    canonical: 'https://y71.net.pk/withdraw-money-from-y71',
+    canonical: 'https://y71-apk.com.pk/withdraw-money-from-y71',
   },
 };
 
@@ -349,22 +349,22 @@ export default function WithdrawMoneyPage() {
             "@graph": [
               {
                 "@type": "WebPage",
-                "@id": "https://y71.net.pk/withdraw-money-from-y71#webpage",
-                "url": "https://y71.net.pk/withdraw-money-from-y71",
+                "@id": "https://y71-apk.com.pk/withdraw-money-from-y71#webpage",
+                "url": "https://y71-apk.com.pk/withdraw-money-from-y71",
                 "name": "How to Withdraw Money from Y71 | JazzCash, EasyPaisa & Bank 2026",
                 "description": "Step-by-step guide to withdraw money from Y71 using JazzCash, EasyPaisa, and Bank Transfer in Pakistan.",
                 "inLanguage": "en-US",
-                "about": { "@type": "Thing", "name": "Y71", "url": "https://y71.net.pk" },
-                "mainEntity": { "@id": "https://y71.net.pk/withdraw-money-from-y71#howto" },
-                "primaryImageOfPage": { "@type": "ImageObject", "url": "https://y71.net.pk/y71-logo.webp" }
+                "about": { "@type": "Thing", "name": "Y71", "url": "https://y71-apk.com.pk" },
+                "mainEntity": { "@id": "https://y71-apk.com.pk/withdraw-money-from-y71#howto" },
+                "primaryImageOfPage": { "@type": "ImageObject", "url": "https://y71-apk.com.pk/y71-logo.webp" }
               },
               {
-                "@id": "https://y71.net.pk/withdraw-money-from-y71#howto",
+                "@id": "https://y71-apk.com.pk/withdraw-money-from-y71#howto",
                 "@type": "HowTo",
                 "name": "How to Withdraw Money from Y71",
                 "description": "Step-by-step guide to withdraw money from Y71 using JazzCash, EasyPaisa, and Bank Transfer in Pakistan.",
                 "totalTime": "PT5M",
-                "url": "https://y71.net.pk/withdraw-money-from-y71",
+                "url": "https://y71-apk.com.pk/withdraw-money-from-y71",
                 "step": [
                   { "@type": "HowToStep", "position": 1, "name": "Open Y71 App", "text": "Open the Y71 app and log in with your registered mobile number and password." },
                   { "@type": "HowToStep", "position": 2, "name": "Click on Wallet Option", "text": "Tap the Wallet option to see your balance and withdraw or deposit buttons." },

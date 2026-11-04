@@ -19,18 +19,18 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://y71.net.pk/about-us",
+    canonical: "https://y71-apk.com.pk/about-us",
   },
   openGraph: {
     title: 'About Y71 - Pakistan\'s Premier Gaming Platform',
     description: 'Learn about Y71, our history, mission, and vision for creating the best gaming platform in Pakistan with real cash rewards.',
-    url: "https://y71.net.pk/about-us",
+    url: "https://y71-apk.com.pk/about-us",
     siteName: "Y71",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://y71.net.pk/y71-logo.webp",
+        url: "https://y71-apk.com.pk/y71-logo.webp",
         width: 1200,
         height: 630,
         alt: "About Y71 - Premier Gaming Platform",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: 'About Y71 - Pakistan\'s Premier Gaming Platform',
     description: 'Learn about Y71, our history, mission, and vision for creating the best gaming platform in Pakistan with real cash rewards.',
-    images: ["https://y71.net.pk/y71-logo.webp"],
+    images: ["https://y71-apk.com.pk/y71-logo.webp"],
   },
 };
 
@@ -76,7 +76,7 @@ export default function AboutPage() {
               <div className="w-full md:w-2/3 md:pl-4">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                    Welcome to <a href="https://y71.net.pk/" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">y71.net.pk</a>, a trusted platform to provide the latest information about <Link href="/" className="text-accent hover:underline font-semibold">Y71</Link>. This is one of the most popular online casino games in Pakistan, having <span className="font-bold text-accent">100K+ users</span>. <a href={DOWNLOAD_APP_URL} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Download Y71</a> now to join thousands of players earning real cash rewards.
+                    Welcome to <a href="https://y71-apk.com.pk/" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">y71-apk.com.pk</a>, a trusted platform to provide the latest information about <Link href="/" className="text-accent hover:underline font-semibold">Y71</Link>. This is one of the most popular online casino games in Pakistan, having <span className="font-bold text-accent">100K+ users</span>. <a href={DOWNLOAD_APP_URL} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Download Y71</a> now to join thousands of players earning real cash rewards.
                   </p>
                   <p className="text-lg text-gray-300 leading-relaxed">
                     Hundreds of people are playing these wonderful games and earning a handsome amount on a daily or weekly basis.
@@ -121,8 +121,8 @@ export default function AboutPage() {
               "@type": "Organization",
               "name": "Y71",
               "alternateName": "Y71",
-              "url": "https://y71.net.pk",
-              "logo": "https://y71.net.pk/y71-logo.webp",
+              "url": "https://y71-apk.com.pk",
+              "logo": "https://y71-apk.com.pk/y71-logo.webp",
               "description": "Y71 is Pakistan's real-money gaming platform with earning games and short mobile rounds.",
               "foundingDate": "2024",
               "foundingLocation": {
@@ -144,7 +144,7 @@ export default function AboutPage() {
             },
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://y71.net.pk/about"
+              "@id": "https://y71-apk.com.pk/about"
             }
           })
         }}

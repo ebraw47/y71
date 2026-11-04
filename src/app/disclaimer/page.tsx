@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Disclaimer - Y71',
     description: 'Legal disclaimer and important information about Y71.',
-    url: 'https://y71.net.pk/disclaimer',
+    url: 'https://y71-apk.com.pk/disclaimer',
     siteName: 'Y71',
     type: 'website',
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Legal disclaimer and important information about Y71.',
   },
   alternates: {
-    canonical: 'https://y71.net.pk/disclaimer',
+    canonical: 'https://y71-apk.com.pk/disclaimer',
   },
   robots: {
     index: true,
@@ -58,7 +58,7 @@ export default function Disclaimer() {
               {/* Main Disclaimer Content */}
               <div className="space-y-6 text-gray-300">
                 <p className="text-lg leading-relaxed">
-                  The information provided on this blog (<a href="https://y71.net.pk" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">y71.net.pk</a>) about <Link href="/" className="text-accent hover:underline font-semibold">Y71</Link> is for <strong>general informational and entertainment purposes only</strong>. We do not host, promote, or encourage any form of gambling or betting activities.
+                  The information provided on this blog (<a href="https://y71-apk.com.pk" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">y71-apk.com.pk</a>) about <Link href="/" className="text-accent hover:underline font-semibold">Y71</Link> is for <strong>general informational and entertainment purposes only</strong>. We do not host, promote, or encourage any form of gambling or betting activities.
                 </p>
 
                 <div className="bg-[#134e22] rounded-xl p-6 border border-accent">
@@ -142,7 +142,7 @@ export default function Disclaimer() {
             "@type": "WebPage",
             "name": "Disclaimer - Y71",
             "description": "Legal disclaimer and important information about Y71 website.",
-            "url": "https://y71.net.pk/disclaimer"
+            "url": "https://y71-apk.com.pk/disclaimer"
           })
         }}
       />

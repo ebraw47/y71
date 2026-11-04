@@ -1,4 +1,4 @@
-const BASE = "https://y71.net.pk";
+const BASE = "https://y71-apk.com.pk";
 
 function safeJsonLd(obj: object): string {
   return JSON.stringify(obj).replace(/</g, "\\u003c");

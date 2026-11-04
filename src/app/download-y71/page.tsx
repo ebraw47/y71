@@ -26,18 +26,18 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://y71.net.pk/download-y71",
+    canonical: "https://y71-apk.com.pk/download-y71",
   },
   openGraph: {
     title: 'Y71 Pakistan Latest 2026 Free Download Official APK',
     description: 'Download Y71 APK free. Play earning games & more. Earn real cash with secure payments. 100K+ downloads!',
-    url: "https://y71.net.pk/download-y71",
+    url: "https://y71-apk.com.pk/download-y71",
     siteName: "Y71",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://y71.net.pk/y71-logo.webp",
+        url: "https://y71-apk.com.pk/y71-logo.webp",
         width: 1200,
         height: 630,
         alt: "Download Y71 APK",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: 'Y71 Pakistan Latest 2026 Free Download Official APK',
     description: 'Download Y71 APK free. Play earning games & more. Earn real cash with secure payments. 100K+ downloads!',
-    images: ["https://y71.net.pk/y71-logo.webp"],
+    images: ["https://y71-apk.com.pk/y71-logo.webp"],
   },
 };
 
@@ -66,21 +66,21 @@ export default function DownloadPage() {
       "priceCurrency": "PKR",
       "availability": "https://schema.org/InStock"
     },
-    "downloadUrl": "https://y71.net.pk/download-y71",
+    "downloadUrl": "https://y71-apk.com.pk/download-y71",
     "softwareVersion": "v1.1.1",
     "fileSize": "16 MB",
     "datePublished": "2026-01-03",
     "description": "Download Y71 APK free for Android. Play earning games & more. Earn real cash with JazzCash & EasyPaisa.",
     "screenshot": [
-      "https://y71.net.pk/y71-deposit.webp",
-      "https://y71.net.pk/y71-home.webp",
-      "https://y71.net.pk/y71-deposit.webp"
+      "https://y71-apk.com.pk/y71-deposit.webp",
+      "https://y71-apk.com.pk/y71-home.webp",
+      "https://y71-apk.com.pk/y71-deposit.webp"
     ],
-    "image": "https://y71.net.pk/y71-logo.webp",
+    "image": "https://y71-apk.com.pk/y71-logo.webp",
     "author": {
       "@type": "Organization",
       "name": "Y71",
-      "url": "https://y71.net.pk"
+      "url": "https://y71-apk.com.pk"
     },
     "inLanguage": ["en", "ur"],
     "countriesSupported": "PK"

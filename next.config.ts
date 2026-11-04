@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "y71.net.pk",
+        hostname: "y71-apk.com.pk",
       },
     ],
     formats: ["image/avif", "image/webp"],

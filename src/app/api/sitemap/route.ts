@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { BLOG_SLUGS } from '@/lib/blogPosts';
 
-const baseUrl = 'https://y71.net.pk';
+const baseUrl = 'https://y71-apk.com.pk';
 
 const blogSlugs = BLOG_SLUGS;
 

@@ -2,9 +2,9 @@
  * Y71 brand & site constants
  */
 export const BRAND_NAME = 'Y71';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://y71.net.pk';
-export const SITE_DOMAIN = 'y71.net.pk';
-export const SUPPORT_EMAIL = 'support@y71.net.pk';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://y71-apk.com.pk';
+export const SITE_DOMAIN = 'y71-apk.com.pk';
+export const SUPPORT_EMAIL = 'support@y71-apk.com.pk';
 
 /** Referral register / join link */
 export const DOWNLOAD_APP_URL =

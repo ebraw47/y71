@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     'Y71 bonus',
     'Y71 earn money',
     'Y71 Game 2026',
-    'y71.net.pk',
+    'y71-apk.com.pk',
   ],
   robots: {
     index: true,

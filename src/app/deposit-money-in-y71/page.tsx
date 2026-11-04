@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Deposit Money in Y71? | Quick & Safe Payment Guide',
     description: 'Step-by-step guide to deposit money in Y71 using JazzCash and EasyPaisa. Quick, safe, and secure payment methods.',
-    url: 'https://y71.net.pk/deposit-money-in-y71',
+    url: 'https://y71-apk.com.pk/deposit-money-in-y71',
     siteName: 'Y71',
     type: 'article',
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'Learn how to deposit money in Y71 using JazzCash and EasyPaisa with our complete guide.',
   },
   alternates: {
-    canonical: 'https://y71.net.pk/deposit-money-in-y71',
+    canonical: 'https://y71-apk.com.pk/deposit-money-in-y71',
   },
 };
 
@@ -349,22 +349,22 @@ export default function DepositMoneyPage() {
             "@graph": [
               {
                 "@type": "WebPage",
-                "@id": "https://y71.net.pk/deposit-money-in-y71#webpage",
-                "url": "https://y71.net.pk/deposit-money-in-y71",
+                "@id": "https://y71-apk.com.pk/deposit-money-in-y71#webpage",
+                "url": "https://y71-apk.com.pk/deposit-money-in-y71",
                 "name": "How to Deposit Money in Y71 | JazzCash & EasyPaisa Guide 2026",
                 "description": "Step-by-step guide to deposit money in Y71 using JazzCash and EasyPaisa in Pakistan.",
                 "inLanguage": "en-US",
-                "about": { "@type": "Thing", "name": "Y71", "url": "https://y71.net.pk" },
-                "mainEntity": { "@id": "https://y71.net.pk/deposit-money-in-y71#howto" },
-                "primaryImageOfPage": { "@type": "ImageObject", "url": "https://y71.net.pk/y71-logo.webp" }
+                "about": { "@type": "Thing", "name": "Y71", "url": "https://y71-apk.com.pk" },
+                "mainEntity": { "@id": "https://y71-apk.com.pk/deposit-money-in-y71#howto" },
+                "primaryImageOfPage": { "@type": "ImageObject", "url": "https://y71-apk.com.pk/y71-logo.webp" }
               },
               {
-                "@id": "https://y71.net.pk/deposit-money-in-y71#howto",
+                "@id": "https://y71-apk.com.pk/deposit-money-in-y71#howto",
                 "@type": "HowTo",
                 "name": "How to Deposit Money in Y71",
                 "description": "Step-by-step guide to deposit money in Y71 using JazzCash and EasyPaisa in Pakistan.",
                 "totalTime": "PT3M",
-                "url": "https://y71.net.pk/deposit-money-in-y71",
+                "url": "https://y71-apk.com.pk/deposit-money-in-y71",
                 "step": [
                   { "@type": "HowToStep", "position": 1, "name": "Open Y71 App", "text": "Open the Y71 app on your Android device and log in with your registered phone number and password." },
                   { "@type": "HowToStep", "position": 2, "name": "Click on Shop Option", "text": "On the dashboard, tap the Shop button to start the deposit process." },

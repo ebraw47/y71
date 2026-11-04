@@ -63,7 +63,7 @@ export default function Page() {
         <p>People searching <strong>is Y71 safe</strong>, <strong>Y71 real or fake</strong>, or <strong>Y71 legal Pakistan</strong> want clear risk notes — not hype.</p>
         <h2 className="text-2xl font-bold text-white mt-8">Safety checklist</h2>
         <ul className="list-disc pl-6 space-y-2">
-          <li>Download only from y71.net.pk or the official button linked here</li>
+          <li>Download only from y71-apk.com.pk or the official button linked here</li>
           <li>Avoid Telegram / WhatsApp APKs and &quot;agent&quot; deposit numbers</li>
           <li>Never share OTP, password, or withdrawal PIN</li>
           <li>Test a small deposit and a small withdrawal before larger amounts</li>

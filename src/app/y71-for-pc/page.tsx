@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://y71.net.pk/y71-for-pc",
+    canonical: "https://y71-apk.com.pk/y71-for-pc",
   },
   openGraph: {
     title: 'Y71 for PC Download Latest Version Free 2026',
     description: 'Download Y71 for PC using Android Emulator. Play on bigger screen with better performance.',
-    url: "https://y71.net.pk/y71-for-pc",
+    url: "https://y71-apk.com.pk/y71-for-pc",
     siteName: "Y71",
     locale: "en_US",
     type: "website",
@@ -47,25 +47,25 @@ export default function CardRummyForPCPage() {
     "@type": "TechArticle",
     "headline": "Y71 for PC Download Latest Version Free 2026",
     "description": "Complete guide to download and play Y71 on PC using Android emulator. Learn about system requirements, best emulators, and features.",
-    "image": "https://y71.net.pk/y71-logo.webp",
+    "image": "https://y71-apk.com.pk/y71-logo.webp",
     "author": {
       "@type": "Organization",
       "name": "Y71",
-      "url": "https://y71.net.pk"
+      "url": "https://y71-apk.com.pk"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Y71",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://y71.net.pk/y71-logo.webp"
+        "url": "https://y71-apk.com.pk/y71-logo.webp"
       }
     },
     "datePublished": "2026-01-03",
     "dateModified": "2026-01-03",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://y71.net.pk/y71-for-pc"
+      "@id": "https://y71-apk.com.pk/y71-for-pc"
     },
     "about": {
       "@type": "SoftwareApplication",
@@ -213,7 +213,7 @@ export default function CardRummyForPCPage() {
           <div className="space-y-4">
             <div className="bg-[#134e22] rounded-lg p-6 border-l-4 border-[#fbdf03]">
               <h3 className="text-lg font-bold text-white mb-2">Step 1:</h3>
-              <p className="text-gray-300">First, find the official website of Y71, like <Link href="/" className="text-[#0ea5e9] hover:underline">y71.net.pk</Link>.</p>
+              <p className="text-gray-300">First, find the official website of Y71, like <Link href="/" className="text-[#0ea5e9] hover:underline">y71-apk.com.pk</Link>.</p>
             </div>
 
             <div className="bg-[#134e22] rounded-lg p-6 border-l-4 border-[#8fd99a]">

@@ -68,7 +68,7 @@ export default function Page() {
         <p><strong>Is Y71 real or fake</strong> is a classic SERP question next to “safe” and “legal.” No site can guarantee every payout, but you can filter obvious scams before you send JazzCash or EasyPaisa money.</p>
         <h2 className="text-2xl font-bold text-white mt-8">Signs of a fake Y71 experience</h2>
         <ul className="list-disc pl-6 space-y-2">
-          <li>APK from random WhatsApp / Telegram files instead of <Link href="/" className="text-accent hover:underline">y71.net.pk</Link></li>
+          <li>APK from random WhatsApp / Telegram files instead of <Link href="/" className="text-accent hover:underline">y71-apk.com.pk</Link></li>
           <li>“Mod / unlimited money” installs</li>
           <li>Someone asking you to pay a fee to release a withdrawal</li>
           <li>Support asking for OTP, JazzCash PIN or full CNIC photos over chat outside the app</li>

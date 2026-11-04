@@ -65,7 +65,7 @@ export default function Page() {
         <ul className="list-disc pl-6 space-y-2">
           <li>Android 5.0+ and enough free storage (~10MB plus cache)</li>
           <li>Stable mobile data or Wi-Fi</li>
-          <li>Open y71.net.pk — not random third-party APK sites</li>
+          <li>Open y71-apk.com.pk — not random third-party APK sites</li>
         </ul>
         <h2 className="text-2xl font-bold text-white mt-8">Install steps</h2>
         <ol className="list-decimal pl-6 space-y-2">

@@ -117,7 +117,7 @@ export default function Page() {
         <h2 className="text-2xl font-bold text-white mt-8">Verdict</h2>
         <p>
           Y71 suits Pakistani players who want a simple earning-style lobby with local wallets. Download
-          only from the official button on y71.net.pk, start with small deposits, test a minimum
+          only from the official button on y71-apk.com.pk, start with small deposits, test a minimum
           withdrawal first, and treat every session as entertainment — not guaranteed income.{' '}
           {MIN_AGE}+ only.
         </p>
