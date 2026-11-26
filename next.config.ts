@@ -27,6 +27,8 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      // Old dynamic sitemap → static sitemap (GSC may still request this URL)
+      { source: "/api/sitemap", destination: "/sitemap.xml", permanent: true },
       // Legacy 777DX → Y71
       { source: "/download-777dx", destination: "/download-y71", permanent: true },
       { source: "/deposit-money-in-777dx", destination: "/deposit-money-in-y71", permanent: true },
