@@ -166,7 +166,7 @@ export default function RootLayout({
                 gtag('js', new Date());
                 gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
                   page_path: window.location.pathname,
-                  send_page_view: false,
+                  send_page_view: true,
                   transport_type: 'beacon'
                 });
               `}
